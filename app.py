@@ -15,8 +15,8 @@ return """
 @app.route("/status")
 def status():
 info = {
-"servidor": socket.gethostname(),
-"hora_actual": datetime.datetime.now().isoformat()
+  "servidor": socket.gethostname(),
+  "hora_actual": datetime.datetime.now().isoformat()
 }
 return info
 # Esto solo se usa si ejecutas la app en tu propio ordenador (no en Render)
